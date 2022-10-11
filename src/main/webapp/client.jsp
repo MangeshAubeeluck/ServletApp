@@ -2,6 +2,7 @@
  pageEncoding="ISO-8859-1"%>
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,11 +23,12 @@
             <td>${client.email }
             <td>${client.amountDue }</td>
             <td><a href="editClient.jsp?id=${client.getId()}">Update</a></td>
-            <td><a href="deleteuser.jsp?id=${client.getId()}">Delete</a></td></tr> 
+            <td><a href="deleteClient.jsp?id=${client.getId()}">Delete</a></td></tr> 
         
             
        </tr>
     </c:forEach>
 </table>
+
 </body>
 </html>
